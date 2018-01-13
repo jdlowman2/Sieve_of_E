@@ -10,9 +10,6 @@ def find_primes(n):
         print("Warning: float given. Mapping input to integer")
     n = int(n)
     primes = range(2, n)
-    # this is a brute force way
-    # there are some integers i which can be skipped 
-    # (i.e. multiples of an integer that have already been tested)
     for i in range(2, n):
         if i in primes:
             for p, num in enumerate(primes):
